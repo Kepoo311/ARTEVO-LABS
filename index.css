@@ -1,0 +1,286 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Manrope',serif;
+}
+
+body {
+    background-color: #121A21;
+}
+
+nav {
+    border-bottom: white solid 1px;
+}
+
+.navbar {
+        transition: all 1s;
+        --bs-navbar-toggler-icon-bg: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0id2hpdGUiIGNsYXNzPSJiaSBiaS1saXN0IiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIuNSAxMmEuNS41IDAgMCAxIC41LS41aDEwYS41LjUgMCAwIDEgMCAxSDNhLjUuNSAwIDAgMS0uNS0uNW0wLTRhLjUuNSAwIDAgMSAuNS0uNWgxMGEuNS41IDAgMCAxIDAgMUgzYS41LjUgMCAwIDEtLjUtLjVtMC00YS41LjUgMCAwIDEgLjUtLjVoMTBhLjUuNSAwIDAgMSAwIDFIM2EuNS41IDAgMCAxLS41LS41Ii8+Cjwvc3ZnPg==);
+        --bs-navbar-toggler-border-color:white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cust-container {
+    margin: 0px 13% 0px 13%;
+}
+
+.cust-hero-container {
+    margin: 0px 13% 0px 13%;
+}
+
+.hero-sect {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.493)), url('./assets/hero-bg.jpg');
+    background-position: center;
+    background-size: cover;
+
+
+    width: auto;
+    height: 550px;
+    margin-top: 50px;
+    border-radius: 12px;
+}
+
+.p-why {
+    word-wrap: break-word;
+    max-width: 75%;
+}
+
+.emot-why {
+    background-color: #4e47e5;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.emot-why > svg {
+    height: 30px;
+}
+
+.swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+
+.kartu {
+    background-color: #1A2633;
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    border: #334D66 solid 1px;
+    transition: all 0.5s ease-in-out;
+}
+
+.kartu:hover {
+    background-color: #121c25;
+}
+
+.kartu > svg {
+    height: 30px;
+}
+
+.galeri img {
+    width: 100%;
+    border-radius:12px;
+}
+
+.galeri swiper-slide {
+    border-radius: 12px;
+}
+
+.nft-hover {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000000b7;
+    border-radius: 12px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.nft-hover:hover {
+   opacity: 1;
+}
+
+.button-container {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.testi-kartu {
+    background-color: #1A2633;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 12px;
+    border: #334D66 solid 1px;
+    gap: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.testi-kartu > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    
+}
+
+.testi-kartu:hover {
+    background-color: #121c25;
+}
+
+.accordion {
+    --bs-accordion-color: white;
+    --bs-accordion-bg: #1A2633;
+    --bs-accordion-border-color: #334D66;
+    --bs-accordion-btn-color: white;
+    --bs-accordion-active-color: white;
+    --bs-accordion-active-bg: #1e2f42;
+    --bs-accordion-btn-icon: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-arrow-down-short' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4'/></svg>");
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-arrow-down-short' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4'/></svg>");
+}
+
+.modal {
+    --bs-modal-color: white;
+    --bs-modal-bg: #1A2633;
+    --bs-modal-border-color: #334D66;
+}
+
+
+.cntct {
+    height: 20rem;
+}
+
+.active {
+    color : rgba(255, 255, 255, 0.356) !important;
+}
+
+.nav-link:hover {
+    color : rgba(255, 255, 255, 0.356) !important;
+}
+
+.btn-hover:hover {
+ background-color: #192633 !important;
+}
+
+.text-reset:hover {
+    color : rgba(255, 255, 255, 0.356) !important;
+}
+
+.fm-contact {
+    background-color: #121A21; 
+    border: #243647 solid 1px; 
+    color: white;
+}
+
+.fm-contact::placeholder {
+    color: rgba(255, 255, 255, 0.678);
+}
+.fm-contact:focus {
+    background-color: #121A21; 
+    color: white;
+}
+
+.kartu-porto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: fit-content;
+    background-color: #141d27;
+    border: #334D66 solid 1px;
+    border-radius: 12px;
+    transition: all 0.5s ease-in-out;
+}
+
+.kartu-porto > img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.kartu-porto > p {
+    color: white;
+}
+
+.kartu-porto-detail {
+    margin: 10px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    background-color: #0f1820;
+    border: #334D66 solid 1px;
+    border-radius: 12px;
+}
+
+.kartu-porto-hover {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    border: #334D66 solid 3px;
+    opacity: 0;
+    border-radius: 12px;
+    transition: all 0.5s ease-in-out;
+}
+
+.kartu-porto .kartu-porto-hover:hover {
+    opacity: 1;
+}
+
+.kartu-porto:hover {
+    transform: translateY(-5px);
+}
+
+.kartu-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 576px) {
+       .cust-container{
+        margin: 0px 4% 0px 4%;
+       }
+
+       .cust-hero-container {
+        margin: 0;
+       }
+
+       .hero-sect {
+        border-radius: 0px;
+       }
+
+       .p-why {
+        word-wrap: break-word;
+        max-width: 90%;
+    }
+
+    .kartu {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1281px) {
+    .kartu {
+        height: 100%;
+    }
+}

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Artevo Labs</title>
+</head>
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg sticky-top" style="background-color: #121A21;">
+        <div class="container">
+          <a class="navbar-brand text-white fw-medium d-flex text-center align-items-center" href="#">
+            <img src="./assets/Logo.png" alt="Logo" class="img-fluid" style="width: 30px;">
+            <p class="p-0 m-0">Artevo Labs</p>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end text-lg-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#service">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#porto">Portofolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#FAQ">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -60%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+
+      <section data-aos="zoom-in" id="home" class="cust-hero-container hero-sect d-flex flex-column justify-content-center align-items-center text-center" style="scroll-margin-top: 40rem;">
+        <p class="text-white fw-bold p-0 m-0 fs-1">Artevo Labs</p>
+        <p class="text-white">Perusahaan teknologi yang bergerak di industri kreatif</p>
+        <a href="#about" class="btn btn-primary text-white">Learn more</a>
+      </section>
+
+      <section id="about" class="cust-container" style="margin-top: 50px; scroll-margin-top: 20rem;">
+        <h1 data-aos-duration="800" data-aos="fade-right" class="fs-1 text-white fw-bold">Tentang Artevo Labs</h1>
+
+        <p data-aos-duration="800" data-aos="fade-right" class="text-white pt-3 p-why">Artevo Labs adalah perusahaan kreatif yang berfokus pada pengembangan NFT (Non-Fungible Token). Kami menggabungkan seni, teknologi, dan inovasi untuk menciptakan karya digital yang unik dan bernilai, mendukung seniman, merek, dan kolektor dalam dunia digital yang terus berkembang.</p>
+
+        <!-- <div class="pt-4">
+            <div class="d-flex">
+                <div class="emot-why">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-brush" viewBox="0 0 16 16">
+                        <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.1 6.1 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.1 8.1 0 0 1-3.078.132 4 4 0 0 1-.562-.135 1.4 1.4 0 0 1-.466-.247.7.7 0 0 1-.204-.288.62.62 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896q.19.012.348.048c.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04M4.705 11.912a1.2 1.2 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.4 3.4 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3 3 0 0 0 .126-.75zm1.44.026c.12-.04.277-.1.458-.183a5.1 5.1 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005zm3.582-3.043.002.001h-.002z"/>
+                    </svg>
+                </div>
+                <div class="ps-2">
+                    <p class="text-white fw-bold p-0 m-0">Desain Grafis</p>
+                    <p class="text-white">Kami menciptakan desain visual yang memukau.</p>
+                </div>
+            </div>
+            <div class="d-flex pt-3">
+                <div class="emot-why">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-filetype-html" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"/>
+                      </svg>
+                </div>
+                <div class="ps-2">
+                    <p class="text-white fw-bold p-0 m-0">Pengembangan web</p>
+                    <p class="text-white">Kami membangun website responsif dan powerful.</p>
+                </div>
+            </div>
+            <div class="d-flex pt-3">
+                <div class="emot-why">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-megaphone" viewBox="0 0 16 16">
+                        <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 75 75 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0m-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233q.27.015.537.036c2.568.189 5.093.744 7.463 1.993zm-9 6.215v-4.13a95 95 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A61 61 0 0 1 4 10.065m-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68 68 0 0 0-1.722-.082z"/>
+                      </svg>
+                </div>
+                <div class="ps-2">
+                    <p class="text-white fw-bold p-0 m-0">Digital Marketing</p>
+                    <p class="text-white">Strategi pemasaran digital yang efektif untuk menjangkau audiens.</p>
+                </div>
+            </div>
+        </div> -->
+      </section>
+
+      <section id="service" class="cust-container" style="margin-top: 50px; scroll-margin-top: 20rem;">
+        <h1 data-aos-duration="800" data-aos="fade-right" class="fs-1 text-white fw-bold">Layanan Kami</h1>
+
+        <div class="swiper mySwiper pt-3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div data-aos-duration="800" data-aos="flip-down">
+                <div class="kartu d-flex flex-column gap-2 align-items-start p-3 pb-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="White" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                      </svg>
+
+                    <p class="text-white fw-bold p-0 m-0">Pengembangan NFT</p>
+                    <p class="text-white">Kami membantu seniman dan merek menciptakan karya digital eksklusif yang aman dan autentik dengan teknologi blockchain.</p>
+                </div>
+              </div>
+              </div>
+              <div class="swiper-slide">
+                <div data-aos-duration="800" data-aos="flip-down">
+                <div class="kartu d-flex flex-column gap-2 align-items-start p-3 pb-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-chat-left-dots" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                      </svg>
+
+                    <p class="text-white fw-bold p-0 m-0">Pengalaman Immersive NFT</p>
+                    <p class="text-white">Kami menciptakan dunia digital yang interaktif dan mendalam melalui NFT, di mana pengguna dapat menjelajahi dan berinteraksi dengan aset digital.</p>
+                </div>
+              </div>
+              </div>
+              <div class="swiper-slide">
+                <div data-aos-duration="800" data-aos="flip-down">
+                <div class="kartu d-flex flex-column gap-2 align-items-start p-3 pb-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="White" class="bi bi-film" viewBox="0 0 16 16">
+                        <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"/>
+                      </svg>
+
+                    <p class="text-white fw-bold p-0 m-0">Storytelling Interaktif</p>
+                    <p class="text-white">Kami menggunakan NFT untuk menciptakan narasi yang memungkinkan pengguna berpartisipasi dan membentuk jalan cerita melalui aset digital mereka.</p>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section id="porto" class="cust-container" style="margin-top: 50px; scroll-margin-top: 20rem;">
+        <h1 data-aos-duration="800" data-aos="fade-right" class="fs-1 text-white fw-bold">Portofolio</h1>
+
+
+        <div class="swiper galeri pt-3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div data-aos-duration="800" data-aos="zoom-in" class="nft-card">
+                <div class="nft-hover">
+                    <p class="text-white">Timeless Character</p>
+                </div>
+                <img src="./nft/anim1.avif" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div data-aos-duration="800" data-aos="zoom-in" class="nft-card">
+                    <div class="nft-hover">
+                        <p class="text-white">MemeFwends</p>
+                    </div>
+                    <img src="./nft/meme1.avif" alt="">
+                    </div>
+              </div>
+              <div class="swiper-slide">
+                <div data-aos-duration="800" data-aos="zoom-in" class="nft-card">
+                    <div class="nft-hover">
+                        <p class="text-white">BoredPepe</p>
+                    </div>
+                    <img src="./nft/pepe1.avif" alt="">
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="button-container pt-2">
+            <a href="portofolio.html" class="btn btn-hover text-white" style="background-color: #243647;">See more</a>
+          </div>
+
+      </section>
+
+      <section class="cust-container" style="margin-top:20px;">
+        <h1 data-aos-duration="800" data-aos="fade-right" class="fs-1 text-white fw-bold">Testimoni</h1>
+
+        <div data-aos-duration="800" data-aos="fade" class="swiper testiswipe pt-5">
+            <div class="swiper-wrapper testi-container">
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+      </section>
+
+      <section id="FAQ" class="cust-container" style="margin-top: 50px; scroll-margin-top: 10rem;">
+        <h1 data-aos-duration="800" data-aos="fade-right" class="fs-1 text-white fw-bold">Frequently Asked Question</h1>
+
+
+        <div class="accordion pt-5" id="accordionExample">
+            <div data-aos-duration="800" data-aos= "fade" class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Apa itu Artevo Labs?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Artevo Labs adalah perusahaan yang bergerak di bidang industri kreatif, fokus pada desain grafis, pembuatan website, digital marketing, dan pengembangan NFT. Kami berkomitmen untuk menciptakan pengalaman yang inovatif dan menarik bagi klien kami.
+                </div>
+              </div>
+            </div>
+            <div data-aos-duration="800" data-aos= "fade" class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Apa yang membedakan Artevo Labs dari perusahaan lain?
+                </button>
+              </h2>
+              <div data-aos-duration="800" id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Kami menggabungkan seni dan teknologi untuk menghadirkan solusi kreatif yang unik. Tim kami terdiri dari profesional yang berpengalaman dalam bidangnya, sehingga kami dapat memberikan layanan yang berkualitas tinggi dan sesuai dengan kebutuhan klien.
+                </div>
+              </div>
+            </div>
+            <div data-aos-duration="800" data-aos= "fade" class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Bagaimana cara membeli NFT dari Artevo Labs?
+                </button>
+              </h2>
+              <div  id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Untuk membeli NFT, Anda dapat mengunjungi platform NFT kami dan melihat koleksi yang tersedia. Setelah memilih NFT yang ingin dibeli, ikuti langkah-langkah yang diberikan untuk menyelesaikan transaksi.
+                </div>
+              </div>
+            </div>
+            <div data-aos-duration="800" data-aos= "fade" class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Bagaimana proses pengembangan NFT di Artevo Labs?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Proses pengembangan NFT kami meliputi riset konsep, desain visual, dan pengkodean. Kami bekerja sama dengan klien untuk memastikan NFT yang dihasilkan sesuai dengan visi dan tujuan mereka.
+                </div>
+              </div>
+            </div>
+            <div data-aos-duration="800" data-aos= "fade" class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Apa yang harus saya lakukan jika saya mengalami masalah saat membeli NFT?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Jika Anda mengalami masalah, silakan hubungi tim dukungan pelanggan kami. Kami akan dengan senang hati membantu Anda menyelesaikan masalah yang Anda hadapi.
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section id="contact" class="cust-container d-flex flex-column text-center justify-content-center align-items-center cntct" style="margin-top: 50px;">
+        <h1 data-aos-duration="800" data-aos= "fade" class="text-white mb-4">Ready to bring your vision to life?</h1>
+        <button data-aos-duration="800" data-aos= "fade" class="btn btn-primary text-white" data-bs-toggle="modal" data-bs-target="#modalContact">Get in touch</button>
+
+
+        <div class="modal fade" id="modalContact" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Contact us</h1>
+              </div>
+              <div class="modal-body text-start">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control fm-contact" placeholder="Email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Message</label>
+                    <input type="text" class="form-control fm-contact" placeholder="Message" id="Message">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+      <!-- Footer -->
+<footer class="text-center text-lg-start text-white" style="background-color: #1A2633;">
+    <!-- Section: Links  -->
+    <section class="pt-1">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Artevo Labs
+            </h6>
+            <p>
+                Artevo Labs adalah perusahaan kreatif yang berfokus pada pengembangan NFT (Non-Fungible Token). Kami menggabungkan seni, teknologi, dan inovasi untuk menciptakan karya digital yang unik dan bernilai, mendukung seniman, merek, dan kolektor dalam dunia digital yang terus berkembang.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#porto" class="text-reset">NFT</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#home" class="text-reset">Home</a>
+            </p>
+            <p>
+              <a href="#about" class="text-reset">About</a>
+            </p>
+            <p>
+              <a href="#service" class="text-reset">Service</a>
+            </p>
+            <p>
+              <a href="#porto" class="text-reset">Portofolio</a>
+            </p>
+            <p>
+              <a href="#faq" class="text-reset">Faq</a>
+            </p>
+            <p>
+              <a href="#contact" class="text-reset">Contact</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i>Salatigas, Indonesia</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              ArtevoLabs@info.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> +62 0896-4468-493</p>
+            <p><i class="fas fa-print me-3"></i> +62 0896-4468-493</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-reset fw-bold" href="#">Artevo Labs</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script>
+        AOS.init();
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            grabCursor: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 25,
+          },
+        },
+          });
+
+          var swiper = new Swiper(".galeri", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            grabCursor: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+          });
+
+          var swiper = new Swiper(".testiswipe", {
+            slidesPerView: 3,
+            effect: "coverflow",
+            spaceBetween: 30,
+            grabCursor: true,
+            loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          });
+          
+      </script>
+
+      <script src="./index.js"></script>
+</body>
+</html>
