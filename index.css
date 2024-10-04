@@ -244,7 +244,7 @@ a {
 }
 
 .kartu-porto:hover {
-    transform: translateY(-5px);
+    transform: translateY(-15px) !important;
 }
 
 .kartu-container {
