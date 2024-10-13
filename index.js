@@ -206,7 +206,7 @@ const bannerData = [
     gif : "pepe.gif",
     bg : "pepeBanner.png",
     nama : "Bored Pepe",
-    desc : "Bored Pepe NFT is a digital art collection featuring Pepe the Frog, depicted with a bored and apathetic expression, inspired by the meme culture. It blends iconic meme imagery with NFT technology, offering collectors unique, limited-edition art pieces.",
+    desc : "Bored Pepe NFT is a digital art collection featuring Pepe the Frog, depicted with a bored and apathetic expression, inspired by the meme culture. It blends iconic meme imagery with NFT technology, offering collectors unique, limited-edition art pieces. Popular among meme enthusiasts and the NFT community.",
     mtSTS : "Minting Now"
   },
   {
