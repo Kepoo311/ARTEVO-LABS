@@ -1,3 +1,11 @@
+window.onload = function() {
+  document.getElementById("splash-screen").style.opacity = 0;
+  setTimeout(function() {
+    document.getElementById("splash-screen").style.display = "none";
+  }, 1000); 
+};
+
+
 const testi = [
   {
     name: "Andi Prasetyo",
@@ -192,4 +200,54 @@ const nftHTML = nftData
 if (nftConts.length > 0) {
   nftConts[0].innerHTML = nftHTML; // Make sure to use innerHTML (uppercase)
 }
+
+const bannerData = [
+  {
+    gif : "pepe.gif",
+    bg : "pepeBanner.png",
+    nama : "Bored Pepe",
+    desc : "Bored Pepe NFT is a digital art collection featuring Pepe the Frog, depicted with a bored and apathetic expression, inspired by the meme culture. It blends iconic meme imagery with NFT technology, offering collectors unique, limited-edition art pieces.",
+    mtSTS : "Minting Now"
+  },
+  {
+    gif : "memefw.gif",
+    bg : "memeFWbg.png",
+    nama : "MemeFwends",
+    desc : "MemeFwends is a playful NFT collection that brings internet culture to life, transforming beloved memes into unique, collectible characters. Each MemeFwend has its own quirky personality and traits, making it a must-have for meme lovers and NFT enthusiasts alike. Join the fun and own a piece of meme history!",
+    mtSTS : "Minting Now"
+  },
+  {
+    gif : "tmCHR.gif",
+    bg : "tmCHRbg.png",
+    nama : "Timeless Character",
+    desc : "Timeless Character NFT features iconic, hand-drawn characters that transcend time, capturing the essence of creativity and storytelling. With rich backstories and distinct visual appeal, each character is a unique work of art, offering collectors a piece of digital heritage that stands the test of time.",
+    mtSTS : "Minting Now"
+  }
+];
+
+const bannerClass = document.getElementsByClassName('banner-wrapper');
+
+const bannerHTML = bannerData
+  .map((data) => {
+    return `
+      <div class="swiper-slide">
+              <div class="banner-card" style="background:linear-gradient(0deg, rgba(0, 0, 0, 0.650), rgba(0, 0, 0, 0.650)), url('./nft/${data.bg}'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <div class="content">
+                  <img class="nft-banner-img" src="./nft/${data.gif}" alt="${data.nama}" loading="lazy">
+                  <div class="content-desc">
+                    <p class="fs-5" style="color: rgba(255, 255, 255, 0.87);">${data.mtSTS}</p>
+                    <p class="fs-2 fw-bold">${data.nama}</p>
+                    <p class="fs-6 nft-desc" style="color: rgba(255, 255, 255, 0.87);">${data.desc}</p>
+                    <button class="btn btn-light mt-3">${data.mtSTS}</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>`;
+  })
+  .join("");
+
+  if (bannerClass.length > 0) {
+    bannerClass[0].innerHTML = bannerHTML; // Make sure to use innerHTML (uppercase)
+  }
 

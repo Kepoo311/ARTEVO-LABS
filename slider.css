@@ -1,0 +1,118 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 12px;
+    
+  }
+
+  .banner-card > .content {
+    display: flex;
+    padding: 5rem 10px 5rem 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .nft-banner-img {
+    width: 25rem;
+    border-radius: 12px;
+  }
+
+  .banner-card > .content > .content-desc {
+    color: white;
+    width: 25rem;
+  }
+
+  .banner-card > .content > .content-desc > p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: #050f1a;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+          background-color: #022c5c; /* Slightly transparent black on hover */
+        }
+
+  .swiper-button-prev {
+    background-image: url("./assets/angle-left-solid.svg");
+  }
+
+  .swiper-button-next {
+    background-image: url("./assets/angle-right-solid.svg");
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    content: "";
+  }
+
+  .swiper-pagination-bullet{
+    background-color: white;
+  }
+
+  @media screen and (min-width: 810px) and (max-width: 1279px) {
+    .nft-banner-img {
+      width: 15rem;
+    }
+
+    .swiper-button-next {
+      display: none;
+    }
+
+    .swiper-button-prev {
+      display: none;
+    }
+
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 809px) {
+    .nft-banner-img {
+      width: 20rem;
+    }
+
+    .banner-card > .content > .content-desc {
+      color: white;
+      width: 25rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .swiper-button-next {
+      display: none;
+    }
+
+    .swiper-button-prev {
+      display: none;
+    }
+
+  }
+
+
+  /* .banner-card > .content > .content-desc > .nft-desc {
+    width: 50%;
+  } */
+
