@@ -9,65 +9,66 @@ window.onload = function() {
 const testi = [
   {
     name: "Andi Prasetyo",
-    testimonial: "Membeli NFT di Artevo Labs adalah pengalaman yang luar biasa! Prosesnya mudah dan cepat.",
+    testimonial: "Layanan pembuatan website di Artevo sangat profesional. Desainnya modern dan sesuai kebutuhan bisnis saya.",
     date: "2024-09-15",
     image: "person1.jpg",
   },
   {
     name: "Budi Santoso",
-    testimonial: "Saya sangat puas dengan koleksi NFT yang ditawarkan. Kualitasnya sangat baik!",
+    testimonial: "Artevo berhasil mengubah ide saya menjadi website yang fungsional dan estetis. Sangat puas dengan hasilnya!",
     date: "2024-09-16",
     image: "person2.jpg",
   },
   {
     name: "Cahyo Wibowo",
-    testimonial: "Artevo Labs memiliki berbagai pilihan NFT yang menarik. Saya akan kembali untuk membeli lagi.",
+    testimonial: "Proyek UI/UX dengan Artevo berjalan sangat lancar. Timnya sangat memahami user experience yang saya inginkan.",
     date: "2024-09-17",
     image: "person3.jpg",
   },
   {
     name: "Dimas Pramono",
-    testimonial: "Pengalaman berbelanja NFT di sini sangat menyenangkan. Layanan pelanggannya juga responsif.",
+    testimonial: "Desain grafis yang dihasilkan oleh Artevo sangat kreatif dan sesuai dengan brand kami. Pasti akan kembali menggunakan jasa mereka!",
     date: "2024-09-18",
     image: "person4.jpg",
   },
   {
     name: "Eko Saputra",
-    testimonial: "Saya menemukan NFT yang sempurna untuk koleksi saya di Artevo Labs. Sangat direkomendasikan!",
+    testimonial: "Artevo membantu saya membuat website bisnis yang responsif dan menarik. Timnya sangat profesional.",
     date: "2024-09-19",
     image: "person5.jpg",
   },
   {
     name: "Fajar Nugroho",
-    testimonial: "Beli NFT di Artevo Labs membuat saya lebih menghargai seni digital. Prosesnya sangat mudah!",
+    testimonial: "Sangat puas dengan layanan desain UI/UX dari Artevo. Interface yang dibuat sangat user-friendly dan modern.",
     date: "2024-09-20",
     image: "person6.jpg",
   },
   {
     name: "Guntur Setiawan",
-    testimonial: "Artevo Labs adalah tempat terbaik untuk menemukan NFT berkualitas. Saya sangat senang!",
+    testimonial: "Artevo mengerjakan desain grafis kami dengan cepat dan hasilnya luar biasa. Pasti akan menggunakan jasa mereka lagi.",
     date: "2024-09-21",
     image: "person7.jpg",
   },
   {
     name: "Hendra Kurniawan",
-    testimonial: "Layanan yang cepat dan produk yang luar biasa! Saya pasti akan kembali untuk membeli lebih banyak.",
+    testimonial: "Saya sangat merekomendasikan Artevo untuk pembuatan website. Layanan mereka sangat profesional dan tepat waktu.",
     date: "2024-09-22",
     image: "person8.jpg",
   },
   {
     name: "Irwan Maulana",
-    testimonial: "Saya sangat terkesan dengan pilihan NFT di Artevo Labs. Sangat memuaskan!",
+    testimonial: "Kolaborasi dengan Artevo dalam membuat website sangat memuaskan. Desainnya elegan dan fungsional.",
     date: "2024-09-23",
     image: "person9.jpg",
   },
   {
     name: "Joko Subiantoro",
-    testimonial: "Membeli NFT di sini sangat mudah dan aman. Saya sangat merekomendasikannya!",
+    testimonial: "Artevo berhasil menciptakan website yang sesuai visi kami. Sangat mudah berkomunikasi dengan timnya.",
     date: "2024-09-24",
     image: "person10.jpg",
   },
 ];
+
 
 const testiConts = document.getElementsByClassName("testi-container");
 
@@ -92,83 +93,59 @@ if (testiConts.length > 0) {
 
 const nftData = [
   {
-      name: "BoredPepe #1",
-      image: "./nft/pepe1.avif",
-      mintingStatus: "Now",
-      price: 5.5
+      name: "Joki Arceus",
+      image: "./gege/joki.png",
+      Tipe: "Website",
+      status: "Finished"
   },
   {
-      name: "BoredPepe #2",
-      image: "./nft/pepe2.avif",
-      mintingStatus: "Closed",
-      price: 7.0
+      name: "Joki Coding Project",
+      image: "./gege/jokic.png",
+      Tipe: "Website",
+      status: "Finished"
   },
   {
-      name: "MemeFwends #1",
-      image: "./nft/meme1.avif",
-      mintingStatus: "Now",
-      price: 10.0
+      name: "Ayam Geprek Cibaduyut",
+      image: "./gege/gprk.png",
+      Tipe: "Website",
+      status: "Finished"
   },
   {
-      name: "MemeFwends #2",
-      image: "./nft/meme2.avif",
-      mintingStatus: "Pending",
-      price: 12.5
+      name: "Just Chat Ai",
+      image: "./gege/justai.png",
+      Tipe: "Website",
+      status: "Developed"
   },
   {
-      name: "Timeless Characters #1",
-      image: "./nft/anim1.avif",
-      mintingStatus: "Now",
-      price: 8.2
+      name: "Nomz Store",
+      image: "./gege/nomz.png",
+      Tipe: "Website",
+      status: "Finished"
   },
   {
-      name: "Timeless Characters #2",
-      image: "./nft/anim2.avif",
-      mintingStatus: "Closed",
-      price: 9.3
+      name: "Steak House",
+      image: "./gege/stk.png",
+      Tipe: "Ui / Ux",
+      status: "On Going"
   },
   {
-      name: "BoredPepe #3",
-      image: "./nft/pepe3.avif",
-      mintingStatus: "Now",
-      price: 3.8
+      name: "Industrie Website",
+      image: "./gege/prs.png",
+      Tipe: "Ui / Ux",
+      status: "On Going"
   },
   {
-      name: "BoredPepe #4",
-      image: "./nft/pepe4.avif",
-      mintingStatus: "Closed",
-      price: 4.2
+      name: "Graphic Design #1",
+      image: "./gege/gr1.png",
+      Tipe: "Graphic Design",
+      status: "Finished"
   },
   {
-      name: "MemeFwends #3",
-      image: "./nft/meme3.avif",
-      mintingStatus: "Now",
-      price: 2.7
+      name: "Graphic Design #2",
+      image: "./gege/gr2.png",
+      Tipe: "Graphic Design",
+      status: "Finished"
   },
-  {
-      name: "MemeFwends #4",
-      image: "./nft/meme4.avif",
-      mintingStatus: "Pending",
-      price: 3.1
-  },
-  {
-      name: "Timeless Characters #3",
-      image: "./nft/anim3.avif",
-      mintingStatus: "Now",
-      price: 6.0
-  },
-  {
-      name: "Timeless Characters #4",
-      image: "./nft/anim4.avif",
-      mintingStatus: "Closed",
-      price: 6.5
-  },
-  {
-      name: "Timeless Characters #5",
-      image: "./nft/anim5.avif",
-      mintingStatus: "Now",
-      price: 7.8
-  }
 ];
 
 const nftConts = document.getElementsByClassName("kartu-container");
@@ -178,18 +155,18 @@ const nftHTML = nftData
     return `
      <div data-aos-duration="800" data-aos="fade" class="kartu-porto">
                 <div class="kartu-porto-hover">
-                    <button class="btn btn-light">Mint Now</button>
+                    <button class="btn btn-light">See Preview</button>
                 </div>
                 <img src="${data.image}" alt="${data.name}">
                 <p class="p-0 m-0 pt-2 ps-3">${data.name}</p>
                 <div class="kartu-porto-detail pt-3 ps-4 pe-4">
                     <div class="kartu-porto-detail-minting">
-                        <p class="p-0 m-0 pb-2">Minting</p>
-                        <p>${data.mintingStatus}</p>
+                        <p class="p-0 m-0 pb-2">Tipe</p>
+                        <p>${data.Tipe}</p>
                     </div>
                     <div class="kartu-porto-detail-price">
-                        <p class="p-0 m-0 pb-2">Price</p>
-                        <p>${data.price} ETH</p>
+                        <p class="p-0 m-0 pb-2">Status</p>
+                        <p>${data.status}</p>
                     </div>
                 </div>
             </div>`;
@@ -203,25 +180,28 @@ if (nftConts.length > 0) {
 
 const bannerData = [
   {
-    gif : "pepe.gif",
-    bg : "pepeBanner.png",
-    nama : "Bored Pepe",
-    desc : "Bored Pepe NFT is a digital art collection featuring Pepe the Frog, depicted with a bored and apathetic expression, inspired by the meme culture. It blends iconic meme imagery with NFT technology, offering collectors unique, limited-edition art pieces. Popular among meme enthusiasts and the NFT community.",
-    mtSTS : "Minting Now"
+    gif : "joki.png",
+    bg : "banner1.webp",
+    nama : "Joki Arceus",
+    desc : "Joki Arceus adalah proyek website untuk layanan joki game online, yang memudahkan pemain memesan joki dengan cepat dan aman. Fokus proyek ini adalah memberikan pengalaman pengguna yang mudah dengan fitur pemesanan praktis, real-time tracking, dan keamanan data yang kuat.",
+    mtSTS : "View Demo",
+    link : "#"
   },
   {
-    gif : "memefw.gif",
-    bg : "memeFWbg.png",
-    nama : "MemeFwends",
-    desc : "MemeFwends is a playful NFT collection that brings internet culture to life, transforming beloved memes into unique, collectible characters. Each MemeFwend has its own quirky personality and traits, making it a must-have for meme lovers and NFT enthusiasts alike. Join the fun and own a piece of meme history!",
-    mtSTS : "Minting Now"
+    gif : "gprk.png",
+    bg : "bgparallax.png",
+    nama : "Geprek Cibaduyut",
+    desc : "Ayam Geprek Cibaduyut adalah proyek website UMKM yang bertujuan mendukung usaha kuliner lokal secara komersial. Website ini dirancang untuk memudahkan pelanggan dalam melihat menu, melakukan pemesanan online, dan menemukan informasi terkait promo serta lokasi.",
+    mtSTS : "View Demo",
+    link : "https://kepoo311.github.io/Web-Umkm-Geprek-Cibadayut/"
   },
   {
-    gif : "tmCHR.gif",
-    bg : "tmCHRbg.png",
-    nama : "Timeless Character",
-    desc : "Timeless Character NFT features iconic, hand-drawn characters that transcend time, capturing the essence of creativity and storytelling. With rich backstories and distinct visual appeal, each character is a unique work of art, offering collectors a piece of digital heritage that stands the test of time.",
-    mtSTS : "Minting Now"
+    gif : "justai.png",
+    bg : "justaia.png",
+    nama : "Just Chat Ai",
+    desc : "Just Chat Ai adalah proyek website yang dirancang untuk menghadirkan layanan chatbot berbasis AI yang sederhana dan mudah digunakan. Proyek ini bertujuan menyediakan interaksi otomatis yang responsif, membantu pengguna dalam mendapatkan jawaban cepat untuk berbagai pertanyaan.",
+    mtSTS : "View Demo",
+    link : "https://just-chat-tan.vercel.app/"
   }
 ];
 
@@ -231,14 +211,14 @@ const bannerHTML = bannerData
   .map((data) => {
     return `
       <div class="swiper-slide">
-              <div class="banner-card" style="background:linear-gradient(0deg, rgba(0, 0, 0, 0.650), rgba(0, 0, 0, 0.650)), url('./nft/${data.bg}'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+              <div class="banner-card" style="background:linear-gradient(0deg, rgba(0, 0, 0, 0.650), rgba(0, 0, 0, 0.650)), url('./gege/${data.bg}'); background-position: center; background-repeat: no-repeat; background-size: cover;">
                 <div class="content">
-                  <img class="nft-banner-img" src="./nft/${data.gif}" alt="${data.nama}" loading="lazy">
+                  <img class="nft-banner-img" src="./gege/${data.gif}" alt="${data.nama}" loading="lazy">
                   <div class="content-desc">
-                    <p class="fs-5" style="color: rgba(255, 255, 255, 0.87);">${data.mtSTS}</p>
+                    <p class="fs-5" style="color: rgba(255, 255, 255, 0.87);">Best Project</p>
                     <p class="fs-2 fw-bold">${data.nama}</p>
                     <p class="fs-6 nft-desc" style="color: rgba(255, 255, 255, 0.87);">${data.desc}</p>
-                    <button class="btn btn-light mt-3">${data.mtSTS}</button>
+                    <a href="${data.link}" target="_null" class="btn btn-light mt-3">${data.mtSTS}</a>
                   </div>
                 </div>
               </div>

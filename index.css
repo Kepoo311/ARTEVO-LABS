@@ -72,7 +72,8 @@ a {
 }
 
 .hero-sect {
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.493)), url('./assets/hero-bg.jpg');
+    /* background:linear-gradient(0deg, rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.493)), url('./gege/banner.png'); */
+    background: url(./gege/banner.png);
     background-position: center;
     background-size: cover;
 
@@ -83,9 +84,46 @@ a {
     border-radius: 12px;
 }
 
+/* From Uiverse.io by ferlagher */ 
+.button-banner {
+    position: relative;
+    font-size: 1em;
+    padding: 0.7em 1.4em;
+    background-color: #0445bf;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.5em;
+    color: #DEDEDE;
+    box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+  }
+  
+  .button-banner::before {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 50%, rgb(4, 31, 150) 50%, rgb(4, 38, 191) 60%);
+    border-radius: 0 0 0.5em 0;
+    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+  }
+  
+  .button-banner:hover::before {
+    width: 1.6em;
+    height: 1.6em;
+  }
+  
+  .button-banner:active {
+    box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
+    transform: translate(0.1em, 0.1em);
+  }
+
 .p-why {
     word-wrap: break-word;
     max-width: 75%;
+    font-size: 1.1em;
 }
 
 .emot-why {
@@ -123,6 +161,35 @@ a {
 
 .kartu > svg {
     height: 30px;
+}
+
+.layanan-kartu {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    border-bottom: #334D66 solid 1px;
+    border-top: #334D66 solid 1px;
+    transition: all 0.5s ease-in-out !important;
+}
+
+.layanan-img {
+    border-radius: 20px;
+    width: auto;
+    height: 110px;
+}
+
+.layanan-desk {
+    color: white;
+    padding-left: 20px;
+    font-size: 2em;
+}
+
+.layanan-kartu:hover {
+    border-bottom: #334D66 solid 3px;
+    border-top: #334D66 solid 3px;
 }
 
 .galeri img {
@@ -308,7 +375,42 @@ a {
     padding-bottom: 15px;
 }
 
+.brand-carousel {
+    width: 100%;
+    overflow: hidden; /* Hide slides outside of the view */
+    position: relative;
+ }
+ 
+ .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+ }
+ 
+ .carousel-slide {
+    min-width: 200px; /* Adjust to the size you want */
+    margin-right: 20px; /* Space between slides */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .carousel-slide img {
+    width: 100%;
+    filter: grayscale(100%); /* Black and white images */
+    transition: filter 0.3s ease;
+    border-radius: 12px;
+ }
+ 
+ .carousel-slide img:hover {
+    filter: grayscale(0%); /* Hover to show full color */
+ }
 
+ 
+@media only screen and (max-width: 1001px) {
+    .layanan-desk {
+        font-size: 1.2em;
+    }
+}
 
 @media only screen and (max-width: 576px) {
        .cust-container{
@@ -330,6 +432,19 @@ a {
 
     .kartu {
         height: 100%;
+    }
+
+    .layanan-desk {
+        padding: 5px;
+        font-size: 1em;
+    }
+
+    .layanan-kartu {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
     }
 }
 
