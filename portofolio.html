@@ -22,7 +22,7 @@
     </div>
   </div>
 
-    <nav id="navbar" class="navbar navbar-expand-lg" style="background-color: #121A21;">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top" style="background-color: #121A21;">
         <div class="container">
           <a class="navbar-brand text-white fw-medium d-flex text-center align-items-center" href="./">
             <img src="./assets/Logo.png" alt="Logo" class="img-fluid" style="width: 30px;">
@@ -56,7 +56,7 @@
         </div>
       </nav>
 
-      <section class="container">
+      <section class="container" style="padding-top: 3rem;">
 
 
         <div class="swiper mySwiper mt-4">
@@ -72,7 +72,15 @@
       <section  data-aos-duration="800" data-aos="fade" class="container porto-wrapper" style="margin-top: 30px; margin-bottom: 50px;">
         <h1 data-aos-duration="800" data-aos="fade-right" class="fs-2 text-white fw-bold">Portofolio</h1>
 
+        <select class="form-select filter-porto" id="filter-porto" aria-label="Default select example">
+          <option selected value="all">All Category</option>
+          <option value="Website">Website</option>
+          <option value="Ui / Ux">Ui / Ux</option>
+          <option value="Graphic Design">Graphic Design</option>
+        </select>
         <div class="pt-3 kartu-container">
+        
+
         </div>
       </section>
 

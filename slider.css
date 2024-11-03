@@ -73,6 +73,13 @@
     background-color: white;
   }
 
+  .filter-porto {
+    width: 10rem;
+    background-color: #141d27;
+    color: white;
+    border: #334D66 solid 1px;
+  }
+
   @media screen and (min-width: 810px) and (max-width: 1279px) {
     .nft-banner-img {
       width: 15rem;

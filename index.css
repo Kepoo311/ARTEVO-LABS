@@ -176,9 +176,7 @@ a {
 }
 
 .layanan-img {
-    border-radius: 20px;
-    width: auto;
-    height: 110px;
+    border-radius: 12px;
 }
 
 .layanan-desk {
@@ -213,11 +211,15 @@ a {
     border-radius: 12px;
     opacity: 0;
     transition: all 0.5s ease-in-out;
+    transform: scale(0.85) rotate(10deg); /* Tambahkan efek skala */
 }
 
 .nft-hover:hover {
-   opacity: 1;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.8); /* Ubah warna latar belakang saat hover */
+    transform: scale(1) rotate(0deg); /* Kembalikan skala ke ukuran asli */
 }
+
 
 .button-container {
     display: flex;

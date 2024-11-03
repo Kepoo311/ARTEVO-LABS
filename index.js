@@ -150,33 +150,42 @@ const nftData = [
 
 const nftConts = document.getElementsByClassName("kartu-container");
 
-const nftHTML = nftData
-  .map((data) => {
-    return `
-     <div data-aos-duration="800" data-aos="fade" class="kartu-porto">
-                <div class="kartu-porto-hover">
-                    <button class="btn btn-light">See Preview</button>
-                </div>
-                <img src="${data.image}" alt="${data.name}">
-                <p class="p-0 m-0 pt-2 ps-3">${data.name}</p>
-                <div class="kartu-porto-detail pt-3 ps-4 pe-4">
-                    <div class="kartu-porto-detail-minting">
-                        <p class="p-0 m-0 pb-2">Tipe</p>
-                        <p>${data.Tipe}</p>
-                    </div>
-                    <div class="kartu-porto-detail-price">
-                        <p class="p-0 m-0 pb-2">Status</p>
-                        <p>${data.status}</p>
-                    </div>
-                </div>
-            </div>`;
-  })
-  .join("");
+function renderNFTs(data) {
+  const nftHTML = data
+    .map((data) => {
+      return `
+       <div data-aos-duration="800" data-aos="fade" class="kartu-porto">
+                  <div class="kartu-porto-hover">
+                      <button class="btn btn-light">Buy Design</button>
+                  </div>
+                  <img src="${data.image}" alt="${data.name}">
+                  <p class="p-0 m-0 pt-2 ps-3">${data.name}</p>
+                  <div class="kartu-porto-detail pt-3 ps-4 pe-4">
+                      <div class="kartu-porto-detail-minting">
+                          <p class="p-0 m-0 pb-2">Tipe</p>
+                          <p>${data.Tipe}</p>
+                      </div>
+                      <div class="kartu-porto-detail-price">
+                          <p class="p-0 m-0 pb-2">Status</p>
+                          <p>${data.status}</p>
+                      </div>
+                  </div>
+              </div>`;
+    })
+    .join("");
 
-// Accessing the first element in the collection
-if (nftConts.length > 0) {
-  nftConts[0].innerHTML = nftHTML; // Make sure to use innerHTML (uppercase)
+  if (nftConts.length > 0) {
+    nftConts[0].innerHTML = nftHTML; // Update the container with HTML
+  }
 }
+
+renderNFTs(nftData);
+
+document.getElementById('filter-porto').addEventListener('change', function() {
+  const selectedValue = this.value;
+  const filteredData = selectedValue === 'all' ? nftData : nftData.filter(data => data.Tipe === selectedValue);
+  renderNFTs(filteredData);
+});
 
 const bannerData = [
   {
