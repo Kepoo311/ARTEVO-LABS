@@ -80,6 +80,7 @@
     border: #334D66 solid 1px;
   }
 
+
   @media screen and (min-width: 810px) and (max-width: 1279px) {
     .nft-banner-img {
       width: 15rem;
