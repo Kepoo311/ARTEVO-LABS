@@ -94,55 +94,55 @@ if (testiConts.length > 0) {
 const nftData = [
   {
       name: "Joki Arceus",
-      image: "./gege/joki.png",
+      image: "./gege/AU/1.png",
       Tipe: "Website",
       status: "Finished"
   },
   {
       name: "Joki Coding Project",
-      image: "./gege/jokic.png",
+      image: "./gege/AU/2.png",
       Tipe: "Website",
       status: "Finished"
   },
   {
       name: "Ayam Geprek Cibaduyut",
-      image: "./gege/gprk.png",
+      image: "./gege/AU/3.png",
       Tipe: "Website",
       status: "Finished"
   },
   {
       name: "Just Chat Ai",
-      image: "./gege/justai.png",
+      image: "./gege/AU/4.png",
       Tipe: "Website",
       status: "Developed"
   },
   {
       name: "Nomz Store",
-      image: "./gege/nomz.png",
+      image: "./gege/AU/5.png",
       Tipe: "Website",
       status: "Finished"
   },
   {
       name: "Steak House",
-      image: "./gege/stk.png",
+      image: "./gege/AU/6.png",
       Tipe: "Ui / Ux",
       status: "On Going"
   },
   {
       name: "Industrie Website",
-      image: "./gege/prs.png",
+      image: "./gege/AU/7.png",
       Tipe: "Ui / Ux",
       status: "On Going"
   },
   {
       name: "Graphic Design #1",
-      image: "./gege/gr1.png",
+      image: "./gege/AU/8.png",
       Tipe: "Graphic Design",
       status: "Finished"
   },
   {
       name: "Graphic Design #2",
-      image: "./gege/gr2.png",
+      image: "./gege/AU/9.png",
       Tipe: "Graphic Design",
       status: "Finished"
   },
@@ -189,7 +189,7 @@ document.getElementById('filter-porto').addEventListener('change', function() {
 
 const bannerData = [
   {
-    gif : "joki.png",
+    gif : "1.png",
     bg : "banner1.webp",
     nama : "Joki Arceus",
     desc : "Joki Arceus adalah proyek website untuk layanan joki game online, yang memudahkan pemain memesan joki dengan cepat dan aman. Fokus proyek ini adalah memberikan pengalaman pengguna yang mudah dengan fitur pemesanan praktis, real-time tracking, dan keamanan data yang kuat.",
@@ -197,7 +197,7 @@ const bannerData = [
     link : "#"
   },
   {
-    gif : "gprk.png",
+    gif : "3.png",
     bg : "bgparallax.png",
     nama : "Geprek Cibaduyut",
     desc : "Ayam Geprek Cibaduyut adalah proyek website UMKM yang bertujuan mendukung usaha kuliner lokal secara komersial. Website ini dirancang untuk memudahkan pelanggan dalam melihat menu, melakukan pemesanan online, dan menemukan informasi terkait promo serta lokasi.",
@@ -205,7 +205,7 @@ const bannerData = [
     link : "https://kepoo311.github.io/Web-Umkm-Geprek-Cibadayut/"
   },
   {
-    gif : "justai.png",
+    gif : "4.png",
     bg : "justaia.png",
     nama : "Just Chat Ai",
     desc : "Just Chat Ai adalah proyek website yang dirancang untuk menghadirkan layanan chatbot berbasis AI yang sederhana dan mudah digunakan. Proyek ini bertujuan menyediakan interaksi otomatis yang responsif, membantu pengguna dalam mendapatkan jawaban cepat untuk berbagai pertanyaan.",
@@ -222,7 +222,7 @@ const bannerHTML = bannerData
       <div class="swiper-slide">
               <div class="banner-card" style="background:linear-gradient(0deg, rgba(0, 0, 0, 0.650), rgba(0, 0, 0, 0.650)), url('./gege/${data.bg}'); background-position: center; background-repeat: no-repeat; background-size: cover;">
                 <div class="content">
-                  <img class="nft-banner-img" src="./gege/${data.gif}" alt="${data.nama}" loading="lazy">
+                  <img class="nft-banner-img" src="./gege/AU/${data.gif}" alt="${data.nama}" loading="lazy">
                   <div class="content-desc">
                     <p class="fs-5" style="color: rgba(255, 255, 255, 0.87);">Best Project</p>
                     <p class="fs-2 fw-bold">${data.nama}</p>
